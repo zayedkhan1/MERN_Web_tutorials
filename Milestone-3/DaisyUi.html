@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- This is my navbar -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+<h2>Welcome to my web page</h2>
+<h3>I am gonna explore Daisy apa,Daisy apar salam nin dalim markay vot din</h3>
+<button class="btn btn-primary" >click me</button>
+<button>click me again</button>
+
+<!-- Dropdown menu -->
+<div class="dropdown dropdown-bottom">
+    <div tabindex="0" role="button" class="btn m-1  btn-secondary">Click</div>
+    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+      <li><a>Item 1</a></li>
+      <li><a>Item 2</a></li>
+    </ul>
+  </div>
+
+  <!-- Using modal -->
+   <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- darkmode -->
+<input type="checkbox" value="synthwave" class="toggle theme-controller" />
+
+<!-- Making card -->
+<div class="card bg-base-100 w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        alt="Shoes"
+        class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+<!-- carosul -->
+<div class="carousel w-full">
+    <div id="item1" class="carousel-item w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+        class="w-full" />
+    </div>
+    <div id="item2" class="carousel-item w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+        class="w-full" />
+    </div>
+    <div id="item3" class="carousel-item w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+        class="w-full" />
+    </div>
+    <div id="item4" class="carousel-item w-full">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+        class="w-full" />
+    </div>
+  </div>
+  <div class="flex w-full justify-center gap-2 py-2">
+    <a href="#item1" class="btn btn-xs">1</a>
+    <a href="#item2" class="btn btn-xs">2</a>
+    <a href="#item3" class="btn btn-xs">3</a>
+    <a href="#item4" class="btn btn-xs">4</a>
+  </div>
+<!-- chat boot -->
+<div class="chat chat-start">
+    <div class="chat-image avatar">
+      <div class="w-10 rounded-full">
+        <img
+          alt="Tailwind CSS chat bubble component"
+          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+      </div>
+    </div>
+    <div class="chat-header">
+      Obi-Wan Kenobi
+      <time class="text-xs opacity-50">12:45</time>
+    </div>
+    <div class="chat-bubble">You were the Chosen One!</div>
+    <div class="chat-footer opacity-50">Delivered</div>
+  </div>
+  <div class="chat chat-end">
+    <div class="chat-image avatar">
+      <div class="w-10 rounded-full">
+        <img
+          alt="Tailwind CSS chat bubble component"
+          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+      </div>
+    </div>
+    <div class="chat-header">
+      Anakin
+      <time class="text-xs opacity-50">12:46</time>
+    </div>
+    <div class="chat-bubble">I hate you!</div>
+    <div class="chat-footer opacity-50">Seen at 12:46</div>
+  </div>
+
+
+</body>
+</html>
